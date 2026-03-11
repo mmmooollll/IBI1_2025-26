@@ -1,11 +1,11 @@
-# fake code：
-# 1. 定义变量存储用户数据：年龄age、体重weight、性别gender、肌酸浓度Cr
-# 2. 输入校验：判断各变量是否在合法范围
-#    - 年龄：< 100岁；体重：20kg < weight < 80kg
-#    - 肌酸浓度：0 < Cr < 100 µmol/l；性别：仅male/female
-# 3. 若校验不通过：输出提示，说明哪个变量需要修正，不计算CrCl
-# 4. 若校验通过：根据性别计算CrCl（女性乘0.85，男性不乘）
-# 5. 输出计算得到的CrCl值
+# pseudocode
+# 1. store the value of a person's age, weight, gender and creatine concentration
+# 2.check that the input value are within the correct range
+#    - age：< 100；20kg < weight < 80kg
+#    - Cr：0 < Cr < 100 µmol/l；gender：仅male/female
+# 3. If	one	of these conditions is	not met, do	not	report CrCl but	instead	which input	variable needs corrected.
+# 4. if all meet, calculate the CrCl（female*0.85)
+# 5. output the CrCl that have been calculated
 age = int(input("age："))
 weight = float(input("weight："))
 gender =input("（male/female）：").lower()
