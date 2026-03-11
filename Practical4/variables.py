@@ -1,21 +1,18 @@
-a = 5.08  # 2004年苏格兰预估人口
-b = 5.33  # 2014年苏格兰预估人口
-c = 5.55  # 2024年苏格兰预估人口
-d = b - a  # 2004-2014年人口变化
-e = 5.55 - b  # 2014-2025年人口变化（实验文档写2025，数据源为2024的5.55百万）
+a = 5.08  
+b = 5.33  
+c = 5.55  
+d = b - a  
+e = c - b  
 # 对比d和e的大小，判断增长趋势
-print("2004-2014年人口变化：", d)
-print("2014-2025年人口变化：", e)
 if e < d:
-    print("# 苏格兰人口增长速度放缓（减速）")
+    print("population growth decelerating in Scotland")
 elif e > d:
-    print("# 苏格兰人口增长速度加快（加速）")
+    print("population growth accelerating in Scotland")
 else:
-    print("# 苏格兰人口增长速度不变")
-
-# 布尔值部分
+    print("population growth is not change in Scotland")
+# population growth decelerating in Scotland
 X = True
 Y = False
 W = X or Y
-print("X or Y 的结果是：", W)
-# W的真值表：X=T/Y=F→W=T；X=T/Y=T→W=T；X=F/Y=T→W=T；X=F/Y=F→W=F
+print(W)
+#w=True
