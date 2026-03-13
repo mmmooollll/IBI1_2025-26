@@ -29,5 +29,6 @@ if is_valid:
     if gender == "female":
         crcl = crcl * 0.85
         print(f"CrCl：{crcl:.2f} ml/min")
-else:
-    print(f"incorrect input：{error_msg}")
+    else:
+        crcl = crcl
+        print(f"CrCl：{crcl:.2f} ml/min")
