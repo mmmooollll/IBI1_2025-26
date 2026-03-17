@@ -1,6 +1,6 @@
 # What does this piece of code do?
 # Answer:
-# Add up 11 random numbers less than 10
+#Add up 9 random numbers less than 10
 # Import libraries
 # randint allows drawing a random number,
 # e.g. randint(1,5) draws a number between 1 and 5
