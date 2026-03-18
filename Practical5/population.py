@@ -1,4 +1,5 @@
 # 人口数据（百万）
+import matplotlib.pyplot as plt
 population = {
     "UK": [66.7, 69.2],
     "China": [1426, 1410],
@@ -16,20 +17,18 @@ for country, data in population.items():
 
 print("各国人口变化率：")
 for c, g in growth.items():
-    print(c, g, "%")
+    print(f"{c}: {g:.2f}%")
     # 2. 降序排列
 sorted_growth = sorted(growth.items(), key=lambda x:x[1], reverse=True)
 
 print("\n降序排列：")
 for country, val in sorted_growth:
-    print(country, val)
+    print(f"{country}: {val:.2f}%")
 
 max_country = sorted_growth[0][0]
 min_country = sorted_growth[-1][0]
 print("\n增长最大：", max_country)
 print("下降最大：", min_country)
-import matplotlib.pyplot as plt
-
 countries = [x[0] for x in sorted_growth]
 values = [x[1] for x in sorted_growth]
 
