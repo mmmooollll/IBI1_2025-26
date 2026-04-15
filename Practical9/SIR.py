@@ -11,14 +11,14 @@ S_list = [S]
 I_list = [I]
 R_list = [R]# 记录每天各类人口数
 for _ in range(100):
-    new_infections = np.random.binomial(S, beta * I / N)
-    new_recoveries = np.random.binomial(I, gamma)
-    S -= new_infections
-    I += new_infections - new_recoveries
-    R += new_recoveries
-    S_list.append(S)
-    I_list.append(I)
-    R_list.append(R)
+    new_infections = np.random.binomial(S, beta * I / N) # 新感染人数
+    new_recoveries = np.random.binomial(I, gamma) # 新康复人数
+    S -= new_infections # 更新易感人口数
+    I += new_infections - new_recoveries # 更新感染人口数
+    R += new_recoveries # 更新康复人口数
+    S_list.append(S) # 记录易感人口数
+    I_list.append(I) # 记录感染人口数
+    R_list.append(R) # 记录康复人口数
 plt.figure(figsize=(6, 4), dpi=150 )
 plt.plot(S_list, label='Susceptible')
 plt.plot(I_list, label='Infected')
