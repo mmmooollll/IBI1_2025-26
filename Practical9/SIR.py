@@ -1,15 +1,15 @@
-# import necessary l i b r a r i e s 
-import numpy as np 
-import matplotlib . pyplot as plt
-N = 10000
-beta = 0.3
-gamma = 0.05
-S = N - 1
-I = 1
-R = 0
+# import necessary libraries 
+import numpy as np # 随机数
+import matplotlib . pyplot as plt # 绘图工具
+N = 10000 # 总人口数
+beta = 0.3 # 感染率
+gamma = 0.05 # 康复率
+S = N - 1 # 易感人口数
+I = 1 # 感染人口数
+R = 0 # 康复人口数
 S_list = [S]
 I_list = [I]
-R_list = [R]
+R_list = [R]# 记录每天各类人口数
 for _ in range(100):
     new_infections = np.random.binomial(S, beta * I / N)
     new_recoveries = np.random.binomial(I, gamma)
