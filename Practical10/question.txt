@@ -1,2 +1,2 @@
 Question: What are the differences in the average DALYs across Asia, Europe, and Africa in 2019?
-Code line number: 34
+Code line number: 33

@@ -21,15 +21,14 @@ max_country = data_2019.loc[data_2019['DALYs'].idxmax(), 'Entity'] # 使用idxma
 min_country = data_2019.loc[data_2019['DALYs'].idxmin(), 'Entity'] # 使用idxmin()方法找出DALYs列中的最小值的索引，然后使用loc方法获取对应的Entity值
 print("\n2019年DALYs最高的国家：", max_country)
 print("2019年DALYs最低的国家：", min_country)
-# 任务4：绘制2019年DALYs的柱状图
-plt.figure(figsize=(12, 6)) # 设置图形的大小
-plt.bar(data_2019['Entity'], data_2019['DALYs'], color='skyblue') # 绘制柱状图，x轴为国家名称，y轴为DALYs值，柱子的颜色为天蓝色
-plt.xlabel('Country') # 设置x轴标签
-plt.ylabel('DALYs') # 设置y轴标签
-plt.title('DALYs by Country in 2019') # 设置图表标题
-plt.xticks(rotation=90) # 将x轴的标签旋转90度以便更好地显示
-plt.tight_layout() # 调整图表布局以防止标签重叠
-plt.show() # 显示图表   
+# 任务4：画图：瑞士DALYs随年份变化
+switzerland = dalys_data.loc[dalys_data['Entity'] == 'Switzerland']
+plt.plot(switzerland['Year'], switzerland['DALYs'], 'bo-')
+plt.title('DALYs in Switzerland (1990-2019)')
+plt.xlabel('Year')
+plt.ylabel('DALYs')
+plt.xticks(rotation=-90)
+plt.show()
 
 asia = ['China', 'India', 'Afghanistan', 'Japan']
 europe = ['Switzerland', 'Germany', 'France', 'United Kingdom']
