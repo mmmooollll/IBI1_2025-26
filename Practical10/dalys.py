@@ -23,6 +23,7 @@ print("\n2019年DALYs最高的国家：", max_country)
 print("2019年DALYs最低的国家：", min_country)
 # 任务4：画图：瑞士DALYs随年份变化
 switzerland = dalys_data.loc[dalys_data['Entity'] == 'Switzerland']
+
 plt.plot(switzerland['Year'], switzerland['DALYs'], 'bo-')
 plt.title('DALYs in Switzerland (1990-2019)')
 plt.xlabel('Year')
