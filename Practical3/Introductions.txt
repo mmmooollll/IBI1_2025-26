@@ -1,4 +1,4 @@
-Hello, my name is WuTong.
+Hello, my name is Wu Tong.
 I like drinking milktea and eating biscuits.
 I am enjoying teaching IBI1 in person again 
 I am happy that I can push my repo from Visual Studio Code to GitHub
