@@ -1,0 +1,2 @@
+This week I learned the basics of Git and GitHub
+including initializing a repository, committing changes, branching, merging, and publishing a simple website with GitHub Pages. I understand how version control helps track code changes and collaborate. The website setup was interesting, and I now know how to manage projects more professionally.
