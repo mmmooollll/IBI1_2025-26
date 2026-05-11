@@ -20,6 +20,8 @@ print(gene_dic)
 
 print(f"\nFinal gene expression (activity = {activity}):")
 print(final_expression)
+average_expression = sum(final_expression.values()) / len(final_expression)
+print(f"\nAverage gene expression: {average_expression:.2f}")
 
 gene_dic["MYC"]=11.6
 print ("final dictionary:")
