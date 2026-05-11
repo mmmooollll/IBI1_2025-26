@@ -10,12 +10,12 @@ from random import randint
 # e.g. ceil(4.2)=5
 from math import ceil
 
-total_rand = 0
-progress=0
-while progress<=10:
-	progress+=1
-	n = randint(1,10)
-	total_rand+=n
+total_rand = 0 # initialize the variable to store the total of random numbers
+progress=0 # initialize the variable to count the number of random numbers drawn
+while progress<=10: # loop until 10 random numbers have been drawn
+	progress+=1 # increase the progress by 1
+	n = randint(1,10) # draw a random number between 1 and 10
+	total_rand+=n # add the drawn random number to the total
 
 print(total_rand)
 

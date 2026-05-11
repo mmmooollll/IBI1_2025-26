@@ -2,7 +2,7 @@
 # 1. store the value of a person's age, weight, gender and creatine concentration
 # 2.check that the input value are within the correct range
 #    - age：< 100；20kg < weight < 80kg
-#    - Cr：0 < Cr < 100 µmol/l；gender：仅male/female
+#    - Cr：0 < Cr < 100 µmol/l；gender：male/female
 # 3. If	one	of these conditions is	not met, do	not	report CrCl but	instead	which input	variable needs corrected.
 # 4. if all meet, calculate the CrCl（female*0.85)
 # 5. output the CrCl that have been calculated
