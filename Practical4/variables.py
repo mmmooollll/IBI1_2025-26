@@ -11,8 +11,13 @@ elif e > d:
 else:
     print("population growth is not change in Scotland")
 # population growth decelerating in Scotland
+# True  or True  = True
+# True  or False = True
+# False or True  = True
+# False or False = False
 X = True
 Y = False
 W = X or Y
+# If either variable is True, the result of an OR operation is True.
 print(W)
 #w=True
