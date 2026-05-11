@@ -6,7 +6,7 @@ plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 input_fasta = "/Users/mol/Desktop/IBI/IBI1_2025-26/Practical7/Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa"
 piechart_output = 'codon_distribution.png'
-# 复制FASTA读取函数（和stop_codons.py中的完全一致）
+# 复制FASTA读取函数和stop_codons.py中的完全一致
 def read_fasta(fasta_file):
     fasta_dict = {}
     current_header = ''
