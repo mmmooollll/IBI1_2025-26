@@ -34,6 +34,7 @@ values = [x[1] for x in sorted_growth]
 
 plt.bar(countries, values)
 plt.title("Population Change Rate 2020-2024")
+plt.xlabel("Countries") 
 plt.ylabel("Change %")
 plt.xticks(rotation=45)
 plt.tight_layout()
