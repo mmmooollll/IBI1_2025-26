@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 # 设置matplotlib中文显示（避免饼图标注乱码）
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
-input_fasta = "/Users/mol/Desktop/IBI/IBI1_2025-26/Practical7/Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa"
+input_fasta = "Practical7/Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa"
 piechart_output = 'codon_distribution.png'
 # 复制FASTA读取函数和stop_codons.py中的完全一致
 def read_fasta(fasta_file):
@@ -85,12 +85,16 @@ wedges, texts, autotexts = ax.pie(counts, labels=codons, autopct='%1.1f%%',
 # 设置饼图标题
 ax.set_title(f'终止密码子{user_stop}上游读框内密码子分布', fontsize=16, pad=20)
 # 设置标签和占比的字体大小
-plt.setp(texts, fontsize=8)
-plt.setp(autotexts, fontsize=6, color='white', weight='bold')
-
+for text in texts:
+    text.set_fontsize(8)
+for autotext in autotexts:
+    autotext.set_fontsize(6)
+    autotext.set_color('white')
+    autotext.set_weight('bold')
 # 步骤5.3：保存饼图到文件，关闭画布（避免屏幕显示）
 plt.tight_layout()
 plt.savefig(piechart_output, dpi=300, bbox_inches='tight')
+plt.show()  # 显示饼图
 plt.close()
 
 print(f"饼图已保存为{piechart_output}")

@@ -1,0 +1,7 @@
+Protein length: 289 amino acids
+Subcellular localisation: Nucleus
+UniProt ID: P56178
+Taxonomy restriction: Eutheria (placentals)
+Number of hits: Approximately 70
+Percentage identity range: 40% – 100%
+Identity between human DLX5 (P56178) and mouse DLX5 (P70396): ~97%
