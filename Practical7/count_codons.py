@@ -94,7 +94,7 @@ for autotext in autotexts:
 # 步骤5.3：保存饼图到文件，关闭画布（避免屏幕显示）
 plt.tight_layout()
 plt.savefig(piechart_output, dpi=300, bbox_inches='tight')
-plt.show()  # 显示饼图
+plt.show()   # 显示饼图
 plt.close()
 
 print(f"饼图已保存为{piechart_output}")
